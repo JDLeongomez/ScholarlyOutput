@@ -23,7 +23,7 @@ It uses the fantastic [<code>scholar</code>](https://cran.r-project.org/web/pack
 
 Sadly, the [<code>scholar</code>](https://cran.r-project.org/web/packages/scholar/vignettes/scholar.html) package cannot be run from a server like shinyapps.io, so this app must be run locally in your computer with R (and ideally RStudio) installed. 
 
-To do so, you can simply run this code from in the R console (the [<code>shiny</code>](https://shiny.rstudio.com/) package must be installed):
+To do so, you can simply run the code below in R (the [<code>shiny</code>](https://shiny.rstudio.com/) package must be installed):
 
 ```R
 library(shiny)
