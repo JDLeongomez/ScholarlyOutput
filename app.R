@@ -25,7 +25,7 @@ ui <- fluidPage(theme = c("united"),
       <a style=color:#EA4335;  href='https://jdleongomez.info/es/'>Juan David Leongómez</a>
       · 2022 <br>
       Code available on
-      <a style=color:#EA4335;  href='https://github.com/JDLeongomez/ProbDnD'>GitHub</a>")),
+      <a style=color:#EA4335;  href='https://github.com/JDLeongomez/ScolarlyOutput'>GitHub</a>")),
 
     # Sidebar with a slider input for accent colour 
     fluidRow(
