@@ -1,11 +1,7 @@
-#
-# This is a Shiny web application. You can run the application by clicking
-# the 'Run App' button above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    http://shiny.rstudio.com/
-#
+# ScholarlyOutput
+# A shiny app to visualise a GoogleScholar profile
+# https://github.com/JDLeongomez/ScolarlyOutput
+# Juan David Leongómez - https://jdleongomez.info/
 
 library(shiny)
 library(thematic)
@@ -251,7 +247,7 @@ server <- function(input, output) {
         ##Add date to final plot
         Sys.setlocale("LC_TIME", "C")
         annotate_figure(p.fin, 
-                        bottom = text_grob(paste0("Data from Google Scholar. Updated ",
+                        bottom = text_grob(paste0("Data from Google Scholar. Plot updated ",
                                                   format(Sys.Date(),'%B %d, %Y')),
                                            hjust = 1.05, x = 1, size = 8),
                         top = text_grob(profile$name,
