@@ -1,6 +1,6 @@
 # ScolarlyOutput
 
-**ScolarlyOutput** is a small R Shiny app for creating amd exporting a complete plot of your academic [**Google Scholar**](https://scholar.google.com/) profile.
+**ScolarlyOutput** is a small R Shiny app for creating and exporting a complete plot of your academic [**Google Scholar**](https://scholar.google.com/) profile.
 
 It only requires the full link to your Google Scholar profile (just copy it and paste it in the box), and it will create a plot with your name (as it appears on your Google Scholar profile) and two panels:
 
@@ -9,7 +9,7 @@ It only requires the full link to your Google Scholar profile (just copy it and 
   <li>Number of publications and citations per year (including total number of citations)</li>
 </ol>
 
-You can change an accent color and filter publications. 
+You can change an accent colour and filter publications. 
 
 The final plot can be exported to PNG, PDF and SVG formats.
 
@@ -21,12 +21,14 @@ It uses the fantastic [<code>scholar</code>](https://cran.r-project.org/web/pack
 
 ## How to run it
 
-Sadly, the [<code>scholar</code>](https://cran.r-project.org/web/packages/scholar/vignettes/scholar.html) package cannot be updated and run from a server like shinyapps.io, so it must be run localy in your computer. 
+Sadly, the [<code>scholar</code>](https://cran.r-project.org/web/packages/scholar/vignettes/scholar.html) package cannot be updated and run from a server like shinyapps.io, so it must be run locally in your computer with R (and ideally RStudio) installed. 
 
 To do so, simply clone or [download](https://github.com/JDLeongomez/ScolarlyOutput/archive/refs/heads/main.zip) the [**ScolarlyOutput**](https://github.com/JDLeongomez/ScolarlyOutput) repository. 
 
-**You must have the shiny package installed**, so that once you open the [<code>app.R</code>](https://github.com/JDLeongomez/ScolarlyOutput/blob/main/app.R) file In RStudio, you can simply click the **Run App** button.
+**You must have the shiny package installed**, so that once you open the [<code>app.R</code>](https://github.com/JDLeongomez/ScolarlyOutput/blob/main/app.R) file In RStudio, you can simply click the **Run App** button. 
+
+> Please also install any additional necessary packages. The full list includes: <code>shiny</code>, code>thematic</code>, <code>shinythemes</code>, <code>colourpicker</code>, <code>stringr</code>, <code>scholar</code>, <code>dplyr</code>, <code>tidyr</code>, <code>ggplot2</code>, <code>ggpubr</code>, <code>scales</code>, and <code>purrr</code>
 
 ## Why I made this super small app
 
-I originally created the code to download data from Google Scholar and make these plots for a particular version of my CV. However, several friends liked it and wanted to make plots of their own profiles, so I decided to turn it into a Shiny App for anyone to use.
+I originally wrote a script to download data from Google Scholar and make these plots for a particular version of my CV. However, several friends liked it and wanted to make plots of their own profiles (and be able to easily update them), so I decided to turn the code into a Shiny App for anyone to use.
