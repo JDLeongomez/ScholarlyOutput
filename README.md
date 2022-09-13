@@ -23,11 +23,13 @@ It uses the fantastic [<code>scholar</code>](https://cran.r-project.org/web/pack
 
 Sadly, the [<code>scholar</code>](https://cran.r-project.org/web/packages/scholar/vignettes/scholar.html) package cannot be run from a server like shinyapps.io, so this app must be run locally in your computer with R (and ideally RStudio) installed. 
 
-To do so, simply clone or [download](https://github.com/JDLeongomez/ScolarlyOutput/archive/refs/heads/main.zip) the [**ScolarlyOutput**](https://github.com/JDLeongomez/ScolarlyOutput) repository. 
+To do so, you can simply run this code from in the R console (the [<code>shiny</code>](https://shiny.rstudio.com/) package must be installed):
 
-**You must have the shiny package installed**, so that once you open the [<code>app.R</code>](https://github.com/JDLeongomez/ScolarlyOutput/blob/main/app.R) file in RStudio (which you will find inside the ZIP folder you just downloaded), you can simply click the **Run App** button. 
-
-> Please also make sure that any additional necessary packages are installed: <code>shiny</code>, <code>thematic</code>, <code>shinythemes</code>, <code>colourpicker</code>, <code>stringr</code>, <code>scholar</code>, <code>dplyr</code>, <code>tidyr</code>, <code>ggplot2</code>, <code>ggpubr</code>, <code>scales</code>, and <code>purrr</code>
+```R
+library(shiny)
+runGitHub("ScolarlyOutput", "JDLeongomez")
+```
+Alternativaly, you can clone or [download](https://github.com/JDLeongomez/ScolarlyOutput/archive/refs/heads/main.zip) the **ScolarlyOutput** repository, and run the [<code>app.R</code>](https://github.com/JDLeongomez/ScolarlyOutput/blob/main/app.R) file.
 
 ## Why I made this super small app
 
