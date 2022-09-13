@@ -25,9 +25,9 @@ Sadly, the [<code>scholar</code>](https://cran.r-project.org/web/packages/schola
 
 To do so, simply clone or [download](https://github.com/JDLeongomez/ScolarlyOutput/archive/refs/heads/main.zip) the [**ScolarlyOutput**](https://github.com/JDLeongomez/ScolarlyOutput) repository. 
 
-**You must have the shiny package installed**, so that once you open the [<code>app.R</code>](https://github.com/JDLeongomez/ScolarlyOutput/blob/main/app.R) file In RStudio, you can simply click the **Run App** button. 
+**You must have the shiny package installed**, so that once you open the [<code>app.R</code>](https://github.com/JDLeongomez/ScolarlyOutput/blob/main/app.R) file in RStudio (which you will find inside the ZIP folder you just downloaded), you can simply click the **Run App** button. 
 
-> Please also install any additional necessary packages. The full list includes: <code>shiny</code>, <code>thematic</code>, <code>shinythemes</code>, <code>colourpicker</code>, <code>stringr</code>, <code>scholar</code>, <code>dplyr</code>, <code>tidyr</code>, <code>ggplot2</code>, <code>ggpubr</code>, <code>scales</code>, and <code>purrr</code>
+> Please also make sure that any additional necessary packages are installed: <code>shiny</code>, <code>thematic</code>, <code>shinythemes</code>, <code>colourpicker</code>, <code>stringr</code>, <code>scholar</code>, <code>dplyr</code>, <code>tidyr</code>, <code>ggplot2</code>, <code>ggpubr</code>, <code>scales</code>, and <code>purrr</code>
 
 ## Why I made this super small app
 
