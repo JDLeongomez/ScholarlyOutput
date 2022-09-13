@@ -21,7 +21,7 @@ It uses the fantastic [<code>scholar</code>](https://cran.r-project.org/web/pack
 
 ## How to run it
 
-Sadly, the [<code>scholar</code>](https://cran.r-project.org/web/packages/scholar/vignettes/scholar.html) package cannot be updated and run from a server like shinyapps.io, so it must be run locally in your computer with R (and ideally RStudio) installed. 
+Sadly, the [<code>scholar</code>](https://cran.r-project.org/web/packages/scholar/vignettes/scholar.html) package cannot be run from a server like shinyapps.io, so this app must be run locally in your computer with R (and ideally RStudio) installed. 
 
 To do so, simply clone or [download](https://github.com/JDLeongomez/ScolarlyOutput/archive/refs/heads/main.zip) the [**ScolarlyOutput**](https://github.com/JDLeongomez/ScolarlyOutput) repository. 
 
