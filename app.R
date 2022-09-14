@@ -14,7 +14,7 @@ library(tidyr)
 library(ggplot2)
 library(ggpubr)
 library(scales)
-library(purrr)
+library(purrr) 
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(theme = c("united"),

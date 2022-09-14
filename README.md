@@ -39,6 +39,6 @@ runGitHub("ScolarlyOutput", "JDLeongomez")
 
 Alternatively, you can always [download](https://github.com/JDLeongomez/ScolarlyOutput/archive/refs/heads/main.zip) the **_ScolarlyOutput_** repository, and run the [<code>app.R</code>](https://github.com/JDLeongomez/ScolarlyOutput/blob/main/app.R) file.
 
-## Why I made this super small app
+## Why I made this super small app 
 
 I originally wrote a script to download data from Google Scholar and make these plots for a particular version of my CV. However, several friends liked it and wanted to make plots of their own profiles (and be able to easily update them), so I decided to turn the code into a Shiny App for anyone to use.
