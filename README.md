@@ -9,13 +9,15 @@ It only requires the full link to your Google Scholar profile (just copy it and 
   <li>Number of publications and citations per year (including total number of citations)</li>
 </ol>
 
-You can change an accent colour and filter publications.
-
-Once you are happy, the plot can be exported to **PNG**, **PDF**, and even **SVG** format in case you want to edit it (the downloaded file will be named <code>Scholar_profile.png</code>, only changing the file extension depending in the format you selected).
-
 Below is an example of the **_ScolarlyOutput_** UI showing a plot of my own profile:
 
 ![ScolarlyOutput user interface](img/ScolarlyOutput.jpg)
+
+You can change an accent colour and filter publications.
+
+![Colour picker](img/colour_picker.jpg)
+
+Once you are happy, the plot can be exported to **PNG**, **PDF**, and even **SVG** format in case you want to edit it (the downloaded file will be named <code>Scholar_profile.png</code>, only changing the file extension depending in the format you selected).
 
 The downloaded plot (in this case, as PNG) looks like this:
 
