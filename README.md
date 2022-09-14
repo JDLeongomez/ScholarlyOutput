@@ -2,7 +2,7 @@
 
 **_ScolarlyOutput_** is a small R Shiny app for creating and exporting a complete plot of your academic [**Google Scholar**](https://scholar.google.com/) profile.
 
-It only requires the full link to your Google Scholar profile (just copy it and paste it in the box), and it will create a plot with your name (as it appears on your Google Scholar profile) and two panels:
+It only requires the full link to your Google Scholar profile (just copy it and paste it in the box), and it will create a plot with your name (as it appears on your Gsoogle Scholar profile) and two panels:
 
 <ol type="A">
   <li>Citations per publication (including h- and g-index)</li>
