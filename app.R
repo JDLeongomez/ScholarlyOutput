@@ -27,8 +27,7 @@ ui <- fluidPage(theme = c("united"),
     tags$h4(HTML("Plot your scholarly output from <img src='https://upload.wikimedia.org/wikipedia/commons/2/28/Google_Scholar_logo.png' width='150'>")),
     tags$h6(HTML("App created in <a style=color:#EA4335;  href='https://shiny.rstudio.com/'>Shiny</a> by 
       <a style=color:#EA4335;  href='https://jdleongomez.info/es/'>Juan David Leongómez</a>
-      · 2022 <br>
-      Code available on
+      · 2022 · Code available on
       <a style=color:#EA4335;  href='https://github.com/JDLeongomez/ScolarlyOutput'>GitHub</a>")),
 
     # Sidebar with a slider input for accent colour 
