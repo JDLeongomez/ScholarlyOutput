@@ -20,8 +20,12 @@ library(purrr)
 ui <- fluidPage(theme = c("united"),
 
     # Application title
-    titlePanel(HTML("Plot scholarly output from <img src='https://upload.wikimedia.org/wikipedia/commons/2/28/Google_Scholar_logo.png' width='200'>")),
-    p(HTML("App created in <a style=color:#EA4335;  href='https://shiny.rstudio.com/'>Shiny</a> by 
+    titlePanel(title =
+                 tags$link(rel = "icon", type = "image/gif", href = "https://github.com/JDLeongomez/ScolarlyOutput/blob/main/img/icon.png"),
+               "ScholarlyOutput"),
+    tags$h1(HTML("<a style=color:#EA4335;  href='https://github.com/JDLeongomez/ScolarlyOutput'><b><i>ScolarlyOutput</b></i></a>")),
+    tags$h4(HTML("Plot your scholarly output from <img src='https://upload.wikimedia.org/wikipedia/commons/2/28/Google_Scholar_logo.png' width='150'>")),
+    tags$h6(HTML("App created in <a style=color:#EA4335;  href='https://shiny.rstudio.com/'>Shiny</a> by 
       <a style=color:#EA4335;  href='https://jdleongomez.info/es/'>Juan David Leongómez</a>
       · 2022 <br>
       Code available on
