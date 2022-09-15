@@ -23,7 +23,7 @@ The downloaded plot (in this case, as PNG) looks like this:
 
 ![ScolarlyOutput plot example](img/Scholar_profile.png)
 
-This app uses the fantastic [<code>scholar</code>](https://cran.r-project.org/web/packages/scholar/vignettes/scholar.html) R package to extract the info from your Google Scholar profile, and then several [<code>tidyverse</code>](https://www.tidyverse.org/) packages (most notably [<code>ggplot2</code>](https://ggplot2.tidyverse.org/)) to wrangle and plot these data.
+This app uses the fantastic [<code>scholar</code>](https://cran.r-project.org/web/packages/scholar/vignettes/scholar.html) R package to extract the info from your Google Scholar profile, and then several [<code>tidyverse</code>](https://www.tidyverse.org/) packages (including [<code>ggplot2</code>](https://ggplot2.tidyverse.org/)) to wrangle and plot these data.
 
 ## How to run it
 
