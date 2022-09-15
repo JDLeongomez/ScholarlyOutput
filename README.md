@@ -29,7 +29,7 @@ This app uses the fantastic [<code>scholar</code>](https://cran.r-project.org/we
 
 Sadly, the [<code>scholar</code>](https://cran.r-project.org/web/packages/scholar/vignettes/scholar.html) package cannot be run from a server like shinyapps.io, so this app must be run locally in your computer with R installed.
 
-However, running it is very easy: you can simply run the code below in R (please note that the [<code>shiny</code>](https://shiny.rstudio.com/) package must be installed):
+However, running it is very easy: you can simply run the code below in R[^1]:
 
 ```R
 #install.packages("shiny")
@@ -42,3 +42,6 @@ Alternatively, you can always [download](https://github.com/JDLeongomez/Scolarly
 ## Why I made this super small app 
 
 I originally wrote a script to download data from Google Scholar and make these plots for a particular version of my CV. However, several friends liked it and wanted to make plots of their own profiles (and be able to easily update them), so I decided to turn the code into a Shiny App for anyone to use.
+
+[^1]: please note that the [<code>shiny</code>](https://shiny.rstudio.com/) package must be installed. Other R packages used in this app include <code>thematic</code>, <code>shinythemes</code>, <code>colourpicker</code>, <code>stringr</code>, <code>scholar</code>, <code>dplyr</code>, <code>tidyr</code>, <code>ggplot2</code>, <code>ggpubr</code>, <code>scales</code>, and <code>purrr</code>.
+
