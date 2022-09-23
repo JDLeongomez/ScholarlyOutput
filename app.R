@@ -105,14 +105,14 @@ server <- function(input, output) {
       res = 120,
       {
         #Define Scholar profile
-        pfl <- input$profl %>% str_split(pattern = 'user\\=') %>%
-          map_chr(c(2)) %>%
+        pfl <- input$profl |> str_split(pattern = 'user\\=') |>
+          map_chr(c(2)) |>
           str_sub(start = 1, end = 12)
         
         #Get data from Scholar (filtering specific non-academic publications)
         ##Publications
-        pubs <- get_publications(pfl) %>%
-          filter(!(journal == "" | journal == "target")) %>% 
+        pubs <- get_publications(pfl) |>
+          filter(!(journal == "" | journal == "target")) |> 
           filter(!(year == "" | year < input$minyear))
         
         ##Citations
@@ -124,19 +124,19 @@ server <- function(input, output) {
         ##Define years (from year of first publication to current year)
         years <- data.frame(year = c(min(pubs$year, na.rm = TRUE):as.numeric(format(Sys.Date(),'%Y'))))
         ##Get number of publications per year
-        pd <- pubs %>%
-          group_by(year) %>%
-          summarise(pt = length(year)) %>%
+        pd <- pubs |>
+          group_by(year) |>
+          summarise(pt = length(year)) |>
           drop_na(year)
         ##Merge years and number of publications per year
-        pt <- years %>%
-          full_join(pd) %>%
+        pt <- years |>
+          full_join(pd) |>
           arrange(year)
         ##Add number of citations per year
-        dat <- pt %>%
-          full_join(ct) %>%
-          arrange(year) %>%
-          mutate(year = as.integer(year)) %>% 
+        dat <- pt |>
+          full_join(ct) |>
+          arrange(year) |>
+          mutate(year = as.integer(year)) |> 
           mutate(across(everything(), ~replace_na(.x, 0)))
         
         #Calculate metrics
@@ -145,7 +145,7 @@ server <- function(input, output) {
         ##Total number of citations
         citSum <- profile$total_cites
         ##Recent citations (last three years)
-        citRecentSum <- ct %>%
+        citRecentSum <- ct |>
           summarize(sumB = sum(cites[year >= yearRecent]))
         ##Number of publications with more than 50 citations
         count50cit <- nrow(ct[ct$cites > 50, ])
