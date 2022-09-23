@@ -105,7 +105,8 @@ server <- function(input, output) {
       res = 120,
       {
         #Define Scholar profile
-        pfl <- input$profl |> str_split(pattern = 'user\\=') |>
+        pfl <- input$profl |> 
+          str_split(pattern = 'user\\=') |>
           map_chr(c(2)) |>
           str_sub(start = 1, end = 12)
         
