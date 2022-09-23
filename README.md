@@ -1,4 +1,10 @@
-# ***ScolarlyOutput***
+# ***ScolarlyOutput*** <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" align="right" width=100 height=100 alt=""/>
+Plot Plot your scholarly output using the [<code>scholar</code>](https://cran.r-project.org/web/packages/scholar/vignettes/scholar.html) R package package 
+
+<!-- badges: start -->
+![](https://img.shields.io/github/last-commit/JDLeongomez/ScolarlyOutput)
+[![License: MIT](https://img.shields.io/badge/License-GPL--3.0-yellow.svg)](https://github.com/JDLeongomez/ScolarlyOutput/blob/main/LICENSE)
+<!-- badges: end -->
 
 **_ScolarlyOutput_** is a small R Shiny app for creating and exporting a complete plot of your academic [**Google Scholar**](https://scholar.google.com/) profile.
 
