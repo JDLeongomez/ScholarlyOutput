@@ -51,7 +51,17 @@ If you want, you can first run the following code, which will check which of the
 
 ```R
 # Required packages
-packages <- c("shiny", "thematic", "shinythemes", "colourpicker", "stringr", "scholar", "dplyr", "tidyr", "ggplot2", "ggpubr", "scales", "purrr")
+packages <- c("shiny", 
+            "thematic", 
+            "shinythemes", 
+            "colourpicker", 
+            "stringr", "scholar", 
+            "dplyr", 
+            "tidyr", 
+            "ggplot2", 
+            "ggpubr", 
+            "scales", 
+            "purrr")
 # Install packages not yet installed
 installed_packages <- packages %in% rownames(installed.packages())
 if (any(installed_packages == FALSE)) {
