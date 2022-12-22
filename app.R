@@ -176,7 +176,7 @@ server <- function(input, output) {
         #Plot 1: Citations per publication, h-index and g-index
         p1 <- ggplot(pubs, aes(x = rank, y = cites)) +
           geom_abline(intercept = 0, slope = 1, color = input$accentCol, linetype = "dotted", size = 0.7) +
-          geom_line(aes(color = "Citations")) +
+          geom_line(aes(color = "Citations per publication")) +
           geom_line(aes(y = floor(sqrt(sums)), color = "Square root of cumulative\ncitations (rounded down)")) +
           scale_color_manual(values = colors) +
           geom_segment(aes(x = h_index, y = h_index, xend = h_index, yend = h_index+(g_index*0.5)),
