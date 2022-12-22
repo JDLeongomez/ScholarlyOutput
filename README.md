@@ -1,12 +1,18 @@
-# ***ScolarlyOutput***
+# ***ScolarlyOutput*** <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" align="right" width=100 height=100 alt=""/>
+Plot Plot your scholarly output using the [<code>scholar</code>](https://cran.r-project.org/web/packages/scholar/vignettes/scholar.html) R package 
+
+<!-- badges: start -->
+![](https://img.shields.io/github/last-commit/JDLeongomez/ScolarlyOutput)
+[![License: MIT](https://img.shields.io/badge/License-GPL--3.0-yellow.svg)](https://github.com/JDLeongomez/ScolarlyOutput/blob/main/LICENSE)
+<!-- badges: end -->
 
 **_ScolarlyOutput_** is a small R Shiny app for creating and exporting a complete plot of your academic [**Google Scholar**](https://scholar.google.com/) profile.
 
-It only requires the full link to your Google Scholar profile (just copy it and paste it in the box), and it will create a plot with your name (as it appears on your Gsoogle Scholar profile) and two panels:
+It only requires the full link to your Google Scholar profile (just copy it and paste it in the box), and it will create a plot with your name (as it appears on your Google Scholar profile) and two panels:
 
 <ol type="A">
-  <li>Citations per publication (including h- and g-index)</li>
-  <li>Number of publications and citations per year (including total number of citations)</li>
+  <li><b>Citations per publication</b> including both your h-index and, importantly, <a href="https://en.wikipedia.org/wiki/G-index">g-index</a> (which I have never seen in plots before)</li>
+  <li><b>Number of publications and citations per year</b> including total number of citations</li>
 </ol>
 
 Below is an example of the **_ScolarlyOutput_** UI showing a plot of my own profile:
@@ -23,21 +29,47 @@ The downloaded plot (in this case, as PNG) looks like this:
 
 ![ScolarlyOutput plot example](img/Scholar_profile.png)
 
-This app uses the fantastic [<code>scholar</code>](https://cran.r-project.org/web/packages/scholar/vignettes/scholar.html) R package to extract the info from your Google Scholar profile, and then several [<code>tidyverse</code>](https://www.tidyverse.org/) packages (most notably [<code>ggplot2</code>](https://ggplot2.tidyverse.org/)) to wrangle and plot these data.
+This app uses the fantastic [<code>scholar</code>](https://cran.r-project.org/web/packages/scholar/vignettes/scholar.html) R package to extract the info from your Google Scholar profile, and then several packages (mostly [<code>tidyverse</code>](https://www.tidyverse.org/) packages including [<code>ggplot2</code>](https://ggplot2.tidyverse.org/)) to wrangle and plot these data.
 
 ## How to run it
 
 Sadly, the [<code>scholar</code>](https://cran.r-project.org/web/packages/scholar/vignettes/scholar.html) package cannot be run from a server like shinyapps.io, so this app must be run locally in your computer with R installed.
 
-However, running it is very easy: you can simply run the code below in R (please note that the [<code>shiny</code>](https://shiny.rstudio.com/) package must be installed):
+However, running it is very easy: you can simply run the code below in R:
 
 ```R
-#install.packages("shiny")
 library(shiny)
 runGitHub("ScolarlyOutput", "JDLeongomez")
 ```
+Alternatively, you can always clone or [download](https://github.com/JDLeongomez/ScolarlyOutput/archive/refs/heads/main.zip) the **_ScolarlyOutput_** repository, and run the [<code>app.R</code>](https://github.com/JDLeongomez/ScolarlyOutput/blob/main/app.R) file.
 
-Alternatively, you can always [download](https://github.com/JDLeongomez/ScolarlyOutput/archive/refs/heads/main.zip) the **_ScolarlyOutput_** repository, and run the [<code>app.R</code>](https://github.com/JDLeongomez/ScolarlyOutput/blob/main/app.R) file.
+<details>
+  <summary><b>Click here to make sure you have all the necessary packages installed</b></summary>
+<br>Please note that the <code>shiny</code> package must be installed. Other R packages used in this app include <code>thematic</code>, <code>shinythemes</code>, <code>colourpicker</code>, <code>stringr</code>, <code>scholar</code>, <code>dplyr</code>, <code>tidyr</code>, <code>ggplot2</code>, <code>ggpubr</code>, <code>scales</code>, and <code>purrr</code>.<br><br>
+
+If you want, you can first run the following code, which will check which of these packages are already installed on your computer, and install the missing ones (if any).
+
+```R
+# Required packages
+packages <- c("shiny", 
+            "thematic", 
+            "shinythemes", 
+            "colourpicker", 
+            "stringr", 
+            "scholar", 
+            "dplyr", 
+            "tidyr", 
+            "ggplot2", 
+            "ggpubr", 
+            "scales", 
+            "purrr")
+# Install packages not yet installed
+installed_packages <- packages %in% rownames(installed.packages())
+if (any(installed_packages == FALSE)) {
+ install.packages(packages[!installed_packages])
+}
+```
+</details>
 
 ## Why I made this super small app 
 
