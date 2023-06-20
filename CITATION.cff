@@ -5,5 +5,7 @@ authors:
   given-names: "Juan David"
   orcid: "https://orcid.org/0000-0002-0092-6298"
 title: "ScolarlyOutput"
-date-released: 2022-09-13
+date-released: 2023-06-20
 url: "https://github.com/JDLeongomez/ScolarlyOutput"
+version: 1.0.0
+doi: 10.5281/zenodo.8060475

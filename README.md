@@ -4,6 +4,7 @@ Plot Plot your scholarly output using the [<code>scholar</code>](https://cran.r-
 <!-- badges: start -->
 ![](https://img.shields.io/github/last-commit/JDLeongomez/ScolarlyOutput)
 [![License: MIT](https://img.shields.io/badge/License-GPL--3.0-yellow.svg)](https://github.com/JDLeongomez/ScolarlyOutput/blob/main/LICENSE)
+[![DOI](https://zenodo.org/badge/536271372.svg)](https://zenodo.org/badge/latestdoi/536271372)
 <!-- badges: end -->
 
 **_ScolarlyOutput_** is a small R Shiny app for creating and exporting a complete plot of your academic [**Google Scholar**](https://scholar.google.com/) profile.
