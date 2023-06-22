@@ -1,5 +1,5 @@
 # ***ScholarlyOutput*** <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" align="right" width=100 height=100 alt=""/>
-Plot Plot your scholarly output using the [<code>scholar</code>](https://cran.r-project.org/web/packages/scholar/vignettes/scholar.html) R package 
+Plot your scholarly output using the [<code>scholar</code>](https://cran.r-project.org/web/packages/scholar/vignettes/scholar.html) R package 
 
 <!-- badges: start -->
 ![](https://img.shields.io/github/last-commit/JDLeongomez/ScholarlyOutput)
@@ -10,6 +10,8 @@ Plot Plot your scholarly output using the [<code>scholar</code>](https://cran.r-
 **_ScholarlyOutput_** is a small R Shiny app for creating and exporting a complete plot of your academic [**Google Scholar**](https://scholar.google.com/) profile.
 
 [![](https://img.shields.io/badge/Run%20the%20app-8A2BE2)](https://shiny.jdl-svr.lat/ScholarlyOutput/)
+
+(**NOTA:** Para la versión en Español, entra a https://github.com/JDLeongomez/ScholarlyOutput_ES)
 
 It only requires the full link to your Google Scholar profile (just copy it and paste it in the box), and it will create a plot with your name (as it appears on your Google Scholar profile) and two panels:
 
@@ -36,9 +38,9 @@ This app uses the fantastic [<code>scholar</code>](https://cran.r-project.org/we
 
 ## How to run it locally
 
-While this app is available from my (rather slow) personal [Shiny server](https://shiny.jdl-svr.lat/ScholarlyOutput/), if that is too slow or my server is not working, you can always run it locally in your computer with R installed.
+While this app is available from my (rather slow) personal [Shiny server](https://shiny.jdl-svr.lat/ScholarlyOutput/), if that is too slow or my server is not working, you can always run it locally in your computer with R installed. 
 
-This is very easy: you can simply run the code below in R:
+To do this, you can simply run the code below in R:
 
 ```R
 library(shiny)
