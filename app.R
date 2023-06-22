@@ -1,6 +1,7 @@
 # ScholarlyOutput
 # A shiny app to visualise a GoogleScholar profile
 # https://github.com/JDLeongomez/ScolarlyOutput
+# https://zenodo.org/badge/latestdoi/536271372
 # Juan David Leongómez - https://jdleongomez.info/
 
 library(shiny)
@@ -30,6 +31,10 @@ ui <- fluidPage(theme = c("united"),
       · 2022 <br>
       Code available on
       <a style=color:#EA4335;  href='https://github.com/JDLeongomez/ScolarlyOutput'>GitHub</a>")),
+    tags$h6(HTML("<p dir='auto'><a target='_blank' rel='noopener noreferrer nofollow' href='https://camo.githubusercontent.com/aafa45b848b5c22e83ab7d8f3c6e5762e995ea8ee98f0395d08ce82cf2ad9a76/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6173742d636f6d6d69742f4a444c656f6e676f6d657a2f53636f6c61726c794f7574707574'><img src='https://camo.githubusercontent.com/aafa45b848b5c22e83ab7d8f3c6e5762e995ea8ee98f0395d08ce82cf2ad9a76/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6173742d636f6d6d69742f4a444c656f6e676f6d657a2f53636f6c61726c794f7574707574' alt='' data-canonical-src='https://img.shields.io/github/last-commit/JDLeongomez/ScolarlyOutput' style='max-width: 100%;'></a>
+<a href='https://github.com/JDLeongomez/ScolarlyOutput/blob/main/LICENSE'><img src='https://camo.githubusercontent.com/d043e5ccecf2cd7dd15535c4f06bcb5bffd346e0876e141394e76fe14b321d57/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c6963656e73652d47504c2d2d332e302d79656c6c6f772e737667' alt='License: MIT' data-canonical-src='https://img.shields.io/badge/License-GPL--3.0-yellow.svg' style='max-width: 100%;'></a>
+<a href='https://zenodo.org/badge/latestdoi/536271372' rel='nofollow'><img src='https://camo.githubusercontent.com/9a07422a279c417108743f5dc9e8a4d7066d00fceb2bfe1513170d052af62ddd/68747470733a2f2f7a656e6f646f2e6f72672f62616467652f3533363237313337322e737667' alt='DOI' data-canonical-src='https://zenodo.org/badge/536271372.svg' style='max-width: 100%;'></a>"
+)),
 
     # Sidebar with a slider input for accent colour 
     fluidRow(

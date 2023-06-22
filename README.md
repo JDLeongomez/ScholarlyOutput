@@ -9,6 +9,8 @@ Plot Plot your scholarly output using the [<code>scholar</code>](https://cran.r-
 
 **_ScolarlyOutput_** is a small R Shiny app for creating and exporting a complete plot of your academic [**Google Scholar**](https://scholar.google.com/) profile.
 
+[![](https://img.shields.io/badge/Run%20the%20app-8A2BE2)](https://shiny.jdl-svr.lat/ScolarlyOutput/)
+
 It only requires the full link to your Google Scholar profile (just copy it and paste it in the box), and it will create a plot with your name (as it appears on your Google Scholar profile) and two panels:
 
 <ol type="A">
@@ -32,11 +34,11 @@ The downloaded plot (in this case, as PNG) looks like this:
 
 This app uses the fantastic [<code>scholar</code>](https://cran.r-project.org/web/packages/scholar/vignettes/scholar.html) R package to extract the info from your Google Scholar profile, and then several packages (mostly [<code>tidyverse</code>](https://www.tidyverse.org/) packages including [<code>ggplot2</code>](https://ggplot2.tidyverse.org/)) to wrangle and plot these data.
 
-## How to run it
+## How to run it locally
 
-Sadly, the [<code>scholar</code>](https://cran.r-project.org/web/packages/scholar/vignettes/scholar.html) package cannot be run from a server like shinyapps.io, so this app must be run locally in your computer with R installed.
+While this app is available from my (rather slow) personal [Shiny server](https://shiny.jdl-svr.lat/ScolarlyOutput/), if that is too slow or my server is not working, you can always run it locally in your computer with R installed.
 
-However, running it is very easy: you can simply run the code below in R:
+This is very easy: you can simply run the code below in R:
 
 ```R
 library(shiny)
