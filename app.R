@@ -24,11 +24,11 @@ ui <- fluidPage(theme = c("united"),
     titlePanel(title =
                  tags$link(rel = "icon", type = "image/gif", href = "img/icon.png"),
                "ScholarlyOutput"),
-    tags$h1(HTML("<a style=color:#EA4335;  href='https://github.com/JDLeongomez/ScolarlyOutput'><b><i>ScolarlyOutput</b></i></a>")),
+    tags$h1(HTML("<a style=color:#EA4335;  href='https://github.com/JDLeongomez/ScolarlyOutput'><b><i>ScholarlyOutput</b></i></a>")),
     tags$h4(HTML("Plot your scholarly output from <img src='https://upload.wikimedia.org/wikipedia/commons/2/28/Google_Scholar_logo.png' width='150'>")),
     tags$h6(HTML("App created in <a style=color:#EA4335;  href='https://shiny.rstudio.com/'>Shiny</a> by 
       <a style=color:#EA4335;  href='https://jdleongomez.info/es/'>Juan David Leongómez</a>
-      · 2022 <br>
+      · 2023 <br>
       Code available on
       <a style=color:#EA4335;  href='https://github.com/JDLeongomez/ScolarlyOutput'>GitHub</a>")),
     tags$h6(HTML("<p dir='auto'><a target='_blank' rel='noopener noreferrer nofollow' href='https://camo.githubusercontent.com/aafa45b848b5c22e83ab7d8f3c6e5762e995ea8ee98f0395d08ce82cf2ad9a76/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6173742d636f6d6d69742f4a444c656f6e676f6d657a2f53636f6c61726c794f7574707574'><img src='https://camo.githubusercontent.com/aafa45b848b5c22e83ab7d8f3c6e5762e995ea8ee98f0395d08ce82cf2ad9a76/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6173742d636f6d6d69742f4a444c656f6e676f6d657a2f53636f6c61726c794f7574707574' alt='' data-canonical-src='https://img.shields.io/github/last-commit/JDLeongomez/ScolarlyOutput' style='max-width: 100%;'></a>
