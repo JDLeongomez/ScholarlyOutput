@@ -2,14 +2,14 @@
 Plot Plot your scholarly output using the [<code>scholar</code>](https://cran.r-project.org/web/packages/scholar/vignettes/scholar.html) R package 
 
 <!-- badges: start -->
-![](https://img.shields.io/github/last-commit/JDLeongomez/ScolarlyOutput)
-[![License: MIT](https://img.shields.io/badge/License-GPL--3.0-yellow.svg)](https://github.com/JDLeongomez/ScolarlyOutput/blob/main/LICENSE)
+![](https://img.shields.io/github/last-commit/JDLeongomez/ScholarlyOutput)
+[![License: MIT](https://img.shields.io/badge/License-GPL--3.0-yellow.svg)](https://github.com/JDLeongomez/ScholarlyOutput/blob/main/LICENSE)
 [![DOI](https://zenodo.org/badge/536271372.svg)](https://zenodo.org/badge/latestdoi/536271372)
 <!-- badges: end -->
 
 **_ScholarlyOutput_** is a small R Shiny app for creating and exporting a complete plot of your academic [**Google Scholar**](https://scholar.google.com/) profile.
 
-[![](https://img.shields.io/badge/Run%20the%20app-8A2BE2)](https://shiny.jdl-svr.lat/ScolarlyOutput/)
+[![](https://img.shields.io/badge/Run%20the%20app-8A2BE2)](https://shiny.jdl-svr.lat/ScholarlyOutput/)
 
 It only requires the full link to your Google Scholar profile (just copy it and paste it in the box), and it will create a plot with your name (as it appears on your Google Scholar profile) and two panels:
 
@@ -18,9 +18,9 @@ It only requires the full link to your Google Scholar profile (just copy it and 
   <li><b>Number of publications and citations per year</b> including total number of citations</li>
 </ol>
 
-Below is an example of the **_ScolarlyOutput_** UI showing a plot of my own profile:
+Below is an example of the **_ScholarlyOutput_** UI showing a plot of my own profile:
 
-![ScholarlyOutput user interface](img/ScolarlyOutput.jpg)
+![ScholarlyOutput user interface](img/ScholarlyOutput.jpg)
 
 You can change an accent colour and filter publications.
 
