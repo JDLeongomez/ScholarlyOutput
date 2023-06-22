@@ -1,5 +1,5 @@
 # ***ScholarlyOutput*** <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" align="right" width=100 height=100 alt=""/>
-Plot Plot your scholarly output using the [<code>scholar</code>](https://cran.r-project.org/web/packages/scholar/vignettes/scholar.html) R package 
+Plot your scholarly output using the [<code>scholar</code>](https://cran.r-project.org/web/packages/scholar/vignettes/scholar.html) R package 
 
 <!-- badges: start -->
 ![](https://img.shields.io/github/last-commit/JDLeongomez/ScholarlyOutput)
