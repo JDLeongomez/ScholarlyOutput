@@ -1,4 +1,4 @@
-# ***ScolarlyOutput*** <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" align="right" width=100 height=100 alt=""/>
+# ***ScholarlyOutput*** <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" align="right" width=100 height=100 alt=""/>
 Plot Plot your scholarly output using the [<code>scholar</code>](https://cran.r-project.org/web/packages/scholar/vignettes/scholar.html) R package 
 
 <!-- badges: start -->
@@ -7,7 +7,7 @@ Plot Plot your scholarly output using the [<code>scholar</code>](https://cran.r-
 [![DOI](https://zenodo.org/badge/536271372.svg)](https://zenodo.org/badge/latestdoi/536271372)
 <!-- badges: end -->
 
-**_ScolarlyOutput_** is a small R Shiny app for creating and exporting a complete plot of your academic [**Google Scholar**](https://scholar.google.com/) profile.
+**_ScholarlyOutput_** is a small R Shiny app for creating and exporting a complete plot of your academic [**Google Scholar**](https://scholar.google.com/) profile.
 
 [![](https://img.shields.io/badge/Run%20the%20app-8A2BE2)](https://shiny.jdl-svr.lat/ScolarlyOutput/)
 
@@ -20,7 +20,7 @@ It only requires the full link to your Google Scholar profile (just copy it and 
 
 Below is an example of the **_ScolarlyOutput_** UI showing a plot of my own profile:
 
-![ScolarlyOutput user interface](img/ScolarlyOutput.jpg)
+![ScholarlyOutput user interface](img/ScolarlyOutput.jpg)
 
 You can change an accent colour and filter publications.
 
@@ -30,21 +30,21 @@ Once you are happy, the plot can be exported to **PNG**, **PDF**, and even **SVG
 
 The downloaded plot (in this case, as PNG) looks like this:
 
-![ScolarlyOutput plot example](img/Scholar_profile.png)
+![ScholarlyOutput plot example](img/Scholar_profile.png)
 
 This app uses the fantastic [<code>scholar</code>](https://cran.r-project.org/web/packages/scholar/vignettes/scholar.html) R package to extract the info from your Google Scholar profile, and then several packages (mostly [<code>tidyverse</code>](https://www.tidyverse.org/) packages including [<code>ggplot2</code>](https://ggplot2.tidyverse.org/)) to wrangle and plot these data.
 
 ## How to run it locally
 
-While this app is available from my (rather slow) personal [Shiny server](https://shiny.jdl-svr.lat/ScolarlyOutput/), if that is too slow or my server is not working, you can always run it locally in your computer with R installed.
+While this app is available from my (rather slow) personal [Shiny server](https://shiny.jdl-svr.lat/ScholarlyOutput/), if that is too slow or my server is not working, you can always run it locally in your computer with R installed.
 
 This is very easy: you can simply run the code below in R:
 
 ```R
 library(shiny)
-runGitHub("ScolarlyOutput", "JDLeongomez")
+runGitHub("ScholarlyOutput", "JDLeongomez")
 ```
-Alternatively, you can always clone or [download](https://github.com/JDLeongomez/ScolarlyOutput/archive/refs/heads/main.zip) the **_ScolarlyOutput_** repository, and run the [<code>app.R</code>](https://github.com/JDLeongomez/ScolarlyOutput/blob/main/app.R) file.
+Alternatively, you can always clone or [download](https://github.com/JDLeongomez/ScholarlyOutput/archive/refs/heads/main.zip) the **_ScholarlyOutput_** repository, and run the [<code>app.R</code>](https://github.com/JDLeongomez/ScholarlyOutput/blob/main/app.R) file.
 
 <details>
   <summary><b>Click here to make sure you have all the necessary packages installed</b></summary>
