@@ -4,7 +4,7 @@ authors:
 - family-names: "Leongómez"
   given-names: "Juan David"
   orcid: "https://orcid.org/0000-0002-0092-6298"
-title: "ScolarlyOutput"
+title: "ScolarlyOutput: Create and Export a complete plot of your academic Google Scholar profile"
 date-released: 2023-06-20
 url: "https://github.com/JDLeongomez/ScolarlyOutput"
 version: 1.0.0
