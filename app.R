@@ -7,6 +7,8 @@
 library(shiny)
 library(thematic)
 library(shinythemes)
+library(shinycssloaders)
+library(shinyWidgets)
 library(colourpicker)
 library(stringr)
 library(scholar)
@@ -56,9 +58,9 @@ ui <- fluidPage(theme = c("united"),
                        width = 600, 
                        placeholder = "https://scholar.google.com/citations?user=8Q0jKHsAAAAJ"), 
              h4("Save the Plot"),
-             downloadButton("SavePlotPNG", label = "Save as PNG"),
-             downloadButton("SavePlotPDF", label = "Save as PDF"),
-             downloadButton("SavePlotSVG", label = "Save as SVG"),
+             downloadButton("SavePlotPNG", label = "PNG"),
+             downloadButton("SavePlotPDF", label = "PDF"),
+             downloadButton("SavePlotSVG", label = "SVG"),
              hr(),
              tags$h4("Graphical options"),
              colourInput("accentCol", 
@@ -67,7 +69,7 @@ ui <- fluidPage(theme = c("united"),
                          returnName = TRUE),
              tags$h6(HTML("<b>Note:</b> alternatively, you can paste the  
                           name (e.g. <i><b>blue</b></i>) or
-                          <a style=color:#EA4335;  href='https://g.co/kgs/Dsj3Za'>HEX value</a> 
+                          <a style=color:#EA4335;  href='https://www.google.com/search?q=hex+color+picker' target='_blank'>HEX value</a> 
                           (e.g. <b>#008080</b>) of a colour")),
              hr(),
              tags$h4("Filter publications"),
@@ -95,9 +97,12 @@ ui <- fluidPage(theme = c("united"),
       # Show a plot of the generated distribution
       column(6,
              offset = 1,
+             nextGenShinyApps::submitButton("runSim", text = "All set? Make your plot!", 
+                                            icon("paper-plane"), bg.type = "danger"),
              br(),
              br(),
-             plotOutput("scholarPlot")
+             plotOutput("scholarPlot") %>% 
+               withSpinner(color = "#EA4335")
         )
     )
 )
